@@ -17,7 +17,11 @@ public class SimplePalDBClient {
 	}
 	
 	@SuppressWarnings("unchecked")
-	public <T> T getValue(String key, Class<T> t) {
+	public <T> T getValue(Object key, Class<T> t) {
 		return (T)reader.get(key);
+	}
+	
+	public void close() {
+		reader.close();
 	}
 }

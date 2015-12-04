@@ -2,6 +2,12 @@ package me.shuter.paldb.utils;
 
 public abstract class WeightHelper {
 	
+	/**
+	 * copy from https://github.com/linkedin/PalDB/blob/master/paldb/src/main/java/com/linkedin/paldb/impl/StorageCache.java
+	 * and do some change
+	 * @param value
+	 * @return
+	 */
 	@SuppressWarnings("rawtypes")
 	public int getValueWeight(Object value) {
 		if (value == null) {
